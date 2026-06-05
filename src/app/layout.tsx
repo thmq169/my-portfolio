@@ -35,6 +35,56 @@ export const sigmaOne = Sigmar_One({
 	weight: ['400'],
 });
 
+export const metadata: Metadata = {
+	title: 'THMQ | Frontend Developer',
+	description:
+		'Frontend Developer specializing in React, Next.js, and modern web technologies. Passionate about building responsive and interactive web apps with clean, scalable code.',
+	keywords: [
+		'THMQ',
+		'Tô Hoàng Minh Quân',
+		'Frontend Developer',
+		'React Developer',
+		'Next.js',
+		'Nextjs',
+		'JavaScript',
+		'TypeScript',
+		'Web Developer Portfolio',
+		'Web Developer',
+		'TailwindCSS',
+	],
+	authors: [{ name: 'Tô Hoàng Minh Quân' }],
+	creator: 'Tô Hoàng Minh Quân',
+	publisher: 'Tô Hoàng Minh Quân',
+	openGraph: {
+		title: 'THMQ | Frontend Developer Portfolio',
+		description:
+			'Portfolio of Tô Hoàng Minh Quân - Frontend Developer skilled in React, Next.js, TypeScript, TailwindCSS, and modern JavaScript frameworks.',
+		url: 'https://thmq169.vercel.app/',
+		siteName: 'THMQ Portfolio',
+		images: [
+			{
+				url: '/images/page.png',
+				width: 1200,
+				height: 630,
+				alt: 'THMQ Portfolio Preview',
+			},
+		],
+		locale: 'en_US',
+		type: 'website',
+	},
+	robots: {
+		index: true,
+		follow: true,
+		nocache: false,
+	},
+	icons: {
+		icon: '/favicon.ico',
+		shortcut: '/pwa-icons/icon-16x16.png',
+		apple: '/pwa-icons/icon-180x180.png',
+	},
+	manifest: './manifest.ts',
+};
+
 export default function RootLayout({
 	children,
 }: Readonly<{
