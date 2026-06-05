@@ -71,11 +71,11 @@ const Contact = () => {
 	return (
 		<Wrapper>
 			<section>
-				<h2 className="font-bold text-2.6xl mb-3 uppercase">Contact Me</h2>
+				<h2 className="font-bold text-xl md:text-2.6xl mb-3 uppercase">Contact Me</h2>
 
-				<form onSubmit={handleSubmit} className="flex flex-col gap-6 mt-12">
+				<form onSubmit={handleSubmit} className="flex flex-col gap-6 mt-4">
 					<label htmlFor="name" className="flex flex-col gap-1">
-						<span className="font-medium text-xl capitalize">name</span>
+						<span className="font-medium text-lg md:text-xl capitalize">name</span>
 						<input
 							id="name"
 							name="name"
@@ -88,7 +88,7 @@ const Contact = () => {
 					</label>
 
 					<label htmlFor="email" className="flex flex-col gap-1">
-						<span className="font-medium text-xl capitalize">email address</span>
+						<span className="font-medium text-lg md:text-xl capitalize">email address</span>
 						<input
 							id="email"
 							name="email"
@@ -101,7 +101,7 @@ const Contact = () => {
 					</label>
 
 					<label htmlFor="subject" className="flex flex-col gap-1">
-						<span className="font-medium text-xl capitalize">subject</span>
+						<span className="font-medium text-lg md:text-xl capitalize">subject</span>
 						<input
 							id="subject"
 							name="subject"
@@ -114,7 +114,7 @@ const Contact = () => {
 					</label>
 
 					<label htmlFor="message" className="flex flex-col gap-1">
-						<span className="font-medium text-xl capitalize">message</span>
+						<span className="font-medium text-lg md:text-xl capitalize">message</span>
 						<textarea
 							id="message"
 							name="message"

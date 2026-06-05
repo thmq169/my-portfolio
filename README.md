@@ -1,6 +1,6 @@
 # 🚀 My Portfolio
 
-Welcome to my personal portfolio website — a place where I showcase my experience, projects, technical skills, and journey as a Frontend Developer.
+Welcome to my personal portfolio website — a place where I showcase my experience, projects, technical skills, and journey as a Software Engineer.
 
 This portfolio was built to reflect not only my technical abilities but also my passion for creating scalable, user-friendly, and visually engaging web applications.
 

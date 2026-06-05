@@ -64,11 +64,11 @@ export default function Home() {
 	return (
 		<Wrapper>
 			<section className="text-neutral-200">
-				<h2 className="font-bold text-2.6xl mb-3 uppercase">About Me</h2>
+				<h2 className="font-bold text-xl md:text-2.6xl mb-3 uppercase">About Me</h2>
 
 				<article className="flex flex-col gap-6 [&_span]:text-primary-200">
 					<p>
-						I am a Frontend Developer with experience building scalable, responsive, and
+						I am a Software Engineer with experience building scalable, responsive, and
 						user-centric web applications using <span>ReactJS</span>, <span>NextJS</span>, <span>TypeScript</span>, <span>Redux</span>, <span>Zustand</span>, and
 						modern frontend technologies. I enjoy creating dynamic UI systems, reusable component
 						architectures, and maintainable frontend solutions that can support complex business
@@ -97,7 +97,7 @@ export default function Home() {
 					</p>
 				</article>
 
-				<h2 className="font-bold text-2.6xl capitalize mt-10 text-tertiary-700">What i do</h2>
+				<h2 className="font-bold text-2xl md:text-2.6xl capitalize mt-6 md:mt-8">What i do</h2>
 
 				<div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 mt-4">
 					{services.map((service) => (

@@ -93,7 +93,7 @@ const Skills = () => {
 			<section className="text-neutral-200">
 				{skillSections.map((section) => (
 					<div key={section.title} className="mt-8 first:mt-0">
-						<h2 className="font-bold text-2xl mb-3 uppercase">{section.title}</h2>
+						<h2 className="font-bold text-xl md:text-2xl mb-3 uppercase">{section.title}</h2>
 
 						<div className="grid grid-cols-3 md:flex gap-7 flex-wrap mt-3 lg:px-3">
 							{section.items.map((item, index) => {

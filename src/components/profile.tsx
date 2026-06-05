@@ -29,23 +29,23 @@ const Profile = () => {
 	return (
 		<div
 			className={` ${
-				hamburger ? 'translate-y-0' : '-translate-y-full'
+				hamburger ? 'translate-y-0 h-[120%]' : 'translate-y-[-150%]'
 			} bg-bg absolute z-40 lg:top-0 inset-0 lg:bg-transparent lg:z-0 lg:relative font-inter -translate-y-full lg:translate-y-0 transition delay-150 duration-200 ease-in-out`}
 		>
-			<div className="p-8 md:p-10 lg:hidden" onClick={() => setHamburger()}>
+			<div className="absolute top-6 right-6 z-40 p-2 block lg:hidden" onClick={() => setHamburger()}>
 				<FontAwesomeIcon icon={faXmark} className="text-xl text-primary-200 cursor-pointer" />
 			</div>
-			<aside className="mt-20 md:mt-16 relative text-primary-300">
+			<aside className="mt-24 md:mt-16 relative text-primary-300">
 				<div className="max-w-[90%] mx-auto xl:max-w-full bg-neutral-100 border-3 border-tertiary-300 rounded-xl p-8">
 					<div className="flex justify-center absolute -top-16 w-full left-0">
-						<div className="rounded-xl border-4 border-tertiary-300 w-50 h-50 overflow-hidden">
+						<div className="rounded-xl border-4 border-tertiary-300 w-40 h-40 md:w-50 md:h-50 overflow-hidden">
 							<Image loading="eager" src="/images/avt.png" alt="avatar" width={200} height={200} />
 						</div>
 					</div>
-					<div className="mt-28">
+					<div className="mt-18 md:mt-28">
 						<div className="text-2.5xl text-center font-bold">Tô Hoàng Minh Quân</div>
 						<div className="bg-tertiary-200 font-semibold text-center px-6 py-2 rounded-sm border border-tertiary-300 max-w-max mx-auto mt-1">
-							FrontEnd Developer
+							Software Engineer
 						</div>
 						<div className="flex items-center justify-center gap-4 mt-6">
 							<Link href={'https://github.com/thmq169'} aria-label="github profile" target="_blank">

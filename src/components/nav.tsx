@@ -11,7 +11,6 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import React from 'react';
 
 const navInfo = [
 	{
@@ -55,6 +54,7 @@ const NavBar = () => {
 						<li key={info.title}>
 							<Link
 								href={info.route}
+								scroll={false}
 								onClick={() => setHamburger(false)}
 								className={`${
 									pathname === info.route

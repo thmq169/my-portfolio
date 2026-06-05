@@ -183,14 +183,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
 						<motion.button
 							onClick={onClose}
 							aria-label="Đóng"
-							className="
-							absolute top-4 right-4 z-999999
-							p-2 rounded-full backdrop-blur-md
-							bg-white/25 cursor-pointer text-white
-							opacity-0 hover:shadow-2xl group-hover:opacity-100
-							-translate-y-2 group-hover:translate-y-0
-							transition-all duration-300 ease-out
-						"
+							className="absolute top-4 right-4 z-[999999] p-2 rounded-full backdrop-blur-md bg-white/25 cursor-pointer text-white opacity-100 translate-y-0 lg:opacity-0 lg:-translate-y-2 lg:group-hover:opacity-100 lg:group-hover:translate-y-0 transition-all duration-300 ease-out hover:shadow-2xl"
 						>
 							<FontAwesomeIcon icon={faXmark} className="text-xl text-primary-200 cursor-pointer" />
 						</motion.button>
@@ -253,12 +246,12 @@ const Projects = () => {
 	return (
 		<Wrapper>
 			<>
-				<h2 className="font-bold text-2.6xl mb-3 uppercase">Projects</h2>
-				<div className="grid grid-cols-1 gap-6 md:gap-8 xl:grid-cols-2 items-stretch">
+				<h2 className="font-bold text-xl md:text-2.6xl mb-3 uppercase">Projects</h2>
+				<div className="grid grid-cols-1 gap-6 md:gap-6 xl:grid-cols-2 items-stretch">
 					{projectsData.map((project, index) => (
 						<div
 							key={index}
-							className="flex flex-col bg-tertiary-800 border-[1.5px] border-tertiary-300 px-5 pt-5 pb-4 rounded-lg"
+							className="flex flex-col bg-tertiary-800 border-[1.5px] border-tertiary-300 p-3 rounded-lg"
 						>
 							<div className="flex-1">
 								<Image

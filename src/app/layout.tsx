@@ -36,13 +36,14 @@ export const sigmaOne = Sigmar_One({
 });
 
 export const metadata: Metadata = {
-	title: 'THMQ | Frontend Developer',
+	title: 'THMQ | Software Engineer',
 	description:
-		'Frontend Developer specializing in React, Next.js, and modern web technologies. Passionate about building responsive and interactive web apps with clean, scalable code.',
+		'Software Engineer specializing in React, Next.js, and modern web technologies. Passionate about building responsive and interactive web apps with clean, scalable code.',
 	keywords: [
 		'THMQ',
 		'Tô Hoàng Minh Quân',
 		'Frontend Developer',
+		'Software Engineer',
 		'React Developer',
 		'Next.js',
 		'Nextjs',
@@ -56,9 +57,9 @@ export const metadata: Metadata = {
 	creator: 'Tô Hoàng Minh Quân',
 	publisher: 'Tô Hoàng Minh Quân',
 	openGraph: {
-		title: 'THMQ | Frontend Developer Portfolio',
+		title: 'THMQ | Software Engineer Portfolio',
 		description:
-			'Portfolio of Tô Hoàng Minh Quân - Frontend Developer skilled in React, Next.js, TypeScript, TailwindCSS, and modern JavaScript frameworks.',
+			'Portfolio of Tô Hoàng Minh Quân - Software Engineer skilled in React, Next.js, TypeScript, TailwindCSS, and modern JavaScript frameworks.',
 		url: 'https://thmq169.vercel.app/',
 		siteName: 'THMQ Portfolio',
 		images: [

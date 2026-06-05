@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
 		name: 'THMQ Portfolio',
 		short_name: 'THMQ',
 		description:
-			'Portfolio of Tô Hoàng Minh Quân — Frontend Developer specializing in enterprise applications, scalable UI architectures, and modern web development with React, Next.js, and TypeScript.',
+			'Portfolio of Tô Hoàng Minh Quân — Software Engineer specializing in enterprise applications, scalable UI architectures, and modern web development with React, Next.js, and TypeScript.',
 		start_url: '/',
 		display: 'standalone',
 		orientation: 'portrait',
