@@ -16,6 +16,7 @@ interface Project {
 	image: string;
 	title: string;
 	website: string | null;
+	github: string | null;
 	description: string;
 	techStack: string[];
 }
@@ -25,6 +26,7 @@ const projectsData: Project[] = [
 		image: '/images/movie-mern.png',
 		title: 'Movie - MERN',
 		website: 'https://movflix-thmq169.vercel.app/',
+		github: 'https://github.com/thmq169/movflix',
 		description:
 			'A fullstack movie web app where users can discover movies, TV series, and people. Features include user authentication with session management, a favorites system, a review module (create & delete), and a dynamic search with query handling. Includes a light/dark theming system with centralized state.',
 		techStack: [
@@ -44,6 +46,7 @@ const projectsData: Project[] = [
 		image: '/images/kanban-mern.png',
 		title: 'Kanban - MERN',
 		website: 'https://kanban-thmq169.vercel.app/',
+		github: 'https://github.com/thmq169/kanban',
 		description:
 			'A fullstack Kanban board built on a modular architecture. Features scalable data models for dynamic task management, secure JWT authentication, drag-and-drop workflow, and real-time state synchronization between client and server.',
 		techStack: [
@@ -62,6 +65,7 @@ const projectsData: Project[] = [
 		image: '/images/event.png',
 		title: 'Event Management',
 		website: 'https://event-thmq169.vercel.app/',
+		github: 'https://github.com/thmq169/event',
 		description:
 			'An internal event management platform for organizing, tracking, and managing events including discover, book, attend various events with authentication, event management, search, filtering, categories, checkout, and payments. Built as a unified interface with responsive design and structured data handling across modules.',
 		techStack: [
@@ -83,6 +87,7 @@ const projectsData: Project[] = [
 		image: '/images/e-wallet-landingpage.png',
 		title: 'E-Wallet Landing Page',
 		website: 'https://landing-page-tram-connect.vercel.app/',
+		github: 'https://github.com/thmq169/landing-page',
 		description:
 			'A Web3 e-wallet landing page featuring animated sections including Multicurrency, Features, Partners, Secure Transactions, and Network. Designed for a modern fintech brand with smooth scroll animations and responsive layout.',
 		techStack: ['NextJS', 'SASS', 'Framer Motion', 'SwiperJS'],
@@ -91,40 +96,45 @@ const projectsData: Project[] = [
 		image: '/images/tuabike.png',
 		title: 'Tuabike Landing Page',
 		website: 'https://thmq-tuabike.netlify.app/',
+		github: 'https://github.com/thmq169/tua-bike',
 		description:
-			'A modern bike-sharing platform with real-time location tracking, booking system, and user management. Features include secure authentication, payment integration, and a responsive design for seamless user experience.',
+			'A bike shop landing page showcasing featured bicycles, bike categories, new arrivals, best sellers, customer-choice products, and latest bike news with a clean product-focused layout.',
 		techStack: ['HTML', 'CSS', 'JavaScript'],
 	},
 	{
 		image: '/images/inhype-covid.png',
 		title: 'Inhype COVID-19 Landing Page',
 		website: 'https://thmq-inhype-covid.netlify.app/',
+		github: 'https://github.com/thmq169/inhype-covid',
 		description:
-			'A landing page for a COVID-19 information and resource platform. Features include real-time updates, preventive measures, and community support resources.',
+			'A COVID-19 news and magazine-style landing page featuring article sections, health and world news categories, featured posts, product cards, and a responsive editorial layout.',
 		techStack: ['HTML', 'CSS', 'JavaScript'],
 	},
 	{
 		image: '/images/citicar-landing-page.png',
 		title: 'Citicar Landing Page',
 		website: 'https://citicar-landing-page.netlify.app/',
+		github: 'https://github.com/thmq169/citicar-landing-page',
 		description:
-			'A modern car rental platform with real-time location tracking, booking system, and user management. Features include secure authentication, payment integration, and a responsive design for seamless user experience.',
+			'A Vietnamese used-car landing page presenting vehicle listings, service highlights, consultation contact sections, FAQs, and brand information for a car marketplace business.',
 		techStack: ['HTML', 'CSS', 'JavaScript'],
 	},
 	{
 		image: '/images/lovetravel.png',
 		title: 'LoveTravel Landing Page',
 		website: 'https://thmq-lovetravel.netlify.app/',
+		github: 'https://github.com/thmq169/lovetravel',
 		description:
-			'A modern travel booking platform with real-time location tracking, booking system, and user management. Features include secure authentication, payment integration, and a responsive design for seamless user experience.',
+			'A travel agency landing page showcasing travel packages, destinations, promotions, search filters, package pricing, contact forms, and newsletter subscription sections.',
 		techStack: ['HTML', 'CSS', 'JavaScript'],
 	},
 	{
 		image: '/images/travel.png',
 		title: 'Travel Landing Page',
 		website: 'https://thmq-travel.netlify.app/',
+		github: 'https://github.com/thmq169/travel',
 		description:
-			'A modern travel booking platform with real-time location tracking, booking system, and user management. Features include secure authentication, payment integration, and a responsive design for seamless user experience.',
+			'A travel booking landing page featuring destination highlights, holiday package cards, promotional sections, countdown offers, travel services, partner links, and contact form UI.',
 		techStack: ['HTML', 'CSS', 'JavaScript'],
 	},
 ];
@@ -219,18 +229,29 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
 								))}
 							</div>
 
-							{project.website && (
-								<div className="mt-6 pt-4 border-t border-tertiary-300">
+							<div className="mt-6 pt-4 border-t border-tertiary-300 flex items-center gap-6">
+								{project.website && (
 									<Link
 										href={project.website}
 										target="_blank"
-										className="inline-flex items-center gap-2 text-sm font-medium text-primary-200 hover:text-indigo-300 transition-colors"
+										className="inline-flex items-center gap-1 text-sm font-medium text-primary-200 hover:text-indigo-300 transition-colors"
 									>
 										<ExternalLinkIcon />
 										View Website
 									</Link>
-								</div>
-							)}
+								)}
+
+								{project.github && (
+									<Link
+										href={project.github}
+										target="_blank"
+										className="inline-flex items-center gap-1 text-sm font-medium text-primary-200 hover:text-indigo-300 transition-colors"
+									>
+										<ExternalLinkIcon />
+										GitHub
+									</Link>
+								)}
+							</div>
 						</div>
 					</motion.div>
 				</div>
