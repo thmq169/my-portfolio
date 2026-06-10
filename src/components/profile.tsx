@@ -32,7 +32,10 @@ const Profile = () => {
 				hamburger ? 'translate-y-0 h-[120%]' : 'translate-y-[-150%]'
 			} bg-bg absolute z-40 lg:top-0 inset-0 lg:bg-transparent lg:z-0 lg:relative font-inter -translate-y-full lg:translate-y-0 transition delay-150 duration-200 ease-in-out`}
 		>
-			<div className="absolute top-6 right-6 z-40 p-2 block lg:hidden" onClick={() => setHamburger()}>
+			<div
+				className="absolute top-6 right-6 z-40 p-2 block lg:hidden"
+				onClick={() => setHamburger()}
+			>
 				<FontAwesomeIcon icon={faXmark} className="text-xl text-primary-200 cursor-pointer" />
 			</div>
 			<aside className="mt-24 md:mt-16 relative text-primary-300">
@@ -120,10 +123,11 @@ const Profile = () => {
 					</div>
 					<div className="flex justify-center">
 						<a
-							href="/CV-FrontEndDeveloper-ToHoangMinhQuan.pdf"
+							href={process.env.NEXT_PUBLIC_RESUME_URL}
 							download
 							onMouseLeave={() => setDownload(false)}
 							onMouseOver={() => setDownload(true)}
+							target="_blank"
 							className="font-bold font-merri-waether-sans text-xl text-tertiary-400 px-6 py-2 bg-secondary-700 border-2 border-tertiary-300 outline-none rounded-lg max-w-max mx-auto mt-7 cursor-pointer"
 						>
 							View Resume {download && <FontAwesomeIcon icon={faFileDownload} />}
